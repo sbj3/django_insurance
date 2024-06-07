@@ -13,3 +13,7 @@ The documentation is wrong you have to use / not \
 
 github -f force pushes changes into the repostiroy 
 it takes your changes and does not merge anything it clobbers what isup there. 
+
+you can use git diff by creating a new repostitory, setting up a new django project and using git diff to cross evaluate the first repostiory from the second. 
+
+and git winmerge extension 

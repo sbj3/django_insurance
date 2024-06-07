@@ -16,4 +16,6 @@ class Contact_Information_Form(django_forms.Form):
     #     return super().form_valid(form)
     #
     
-    
+def article_create(request):
+    form = forms.CustomerForm()
+    return render(request, 'quote/quote')

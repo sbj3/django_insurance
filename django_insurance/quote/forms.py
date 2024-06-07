@@ -1,6 +1,10 @@
 from django import forms 
+from .import models 
 
-class Customer_Form(forms.Form):
-    first_name = forms.CharField(max_length=20)
-    last_name = forms.CharField(max_length=20)
+class CustomerForm(forms.ModelForm):
+    class Meta:
+        model = models.Customer
+        fields = ['first_name', 'last_name', 'address','telephone', 'email_address',
+                  'date_of_birth', 'home_ownership_options', 'home_ownership']
+    
     
